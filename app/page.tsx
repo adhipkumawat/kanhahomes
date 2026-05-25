@@ -123,20 +123,20 @@ const productVisuals: Record<
   Bedsheets: {
     description:
       "Bedsheet sets, folded samples, color options, and fabric selections.",
-    mainImage: "/home-textiles-gallery.png",
-    relatedImages: ["/home-items-packing.png", "/curtains-gallery.png"],
+    mainImage: "/bedsheets-gallery.png",
+    relatedImages: ["/home-textiles-gallery.png", "/home-items-packing.png"],
   },
   "Cushion Covers": {
     description:
       "Cushion cover styles, fabric textures, color combinations, and sample sets.",
-    mainImage: "/home-textiles-gallery.png",
-    relatedImages: ["/home-items-packing.png", "/home-decor-gallery.png"],
+    mainImage: "/cushion-covers-gallery.png",
+    relatedImages: ["/home-textiles-gallery.png", "/home-decor-gallery.png"],
   },
   Throws: {
     description:
       "Soft throw blankets, woven textures, neutral colors, and lifestyle textile options.",
-    mainImage: "/home-textiles-gallery.png",
-    relatedImages: ["/home-items-packing.png", "/curtains-gallery.png"],
+    mainImage: "/throws-gallery.png",
+    relatedImages: ["/home-textiles-gallery.png", "/curtains-gallery.png"],
   },
   Curtains: {
     description:
@@ -147,8 +147,8 @@ const productVisuals: Record<
   "Table Runners": {
     description:
       "Table runners, placemats, dining textiles, and coordinated table styling.",
-    mainImage: "/kitchen-dining-gallery.png",
-    relatedImages: ["/home-textiles-gallery.png", "/home-items-packing.png"],
+    mainImage: "/table-runners-gallery.png",
+    relatedImages: ["/kitchen-dining-gallery.png", "/home-textiles-gallery.png"],
   },
   "Decor Vases": {
     description:
@@ -159,32 +159,32 @@ const productVisuals: Record<
   "Wall Decor": {
     description:
       "Wall accents, decorative hangings, lifestyle pieces, and boutique decor options.",
-    mainImage: "/home-decor-gallery.png",
-    relatedImages: ["/home-items-showcase.png", "/home-items-packing.png"],
+    mainImage: "/wall-decor-gallery.png",
+    relatedImages: ["/home-decor-gallery.png", "/home-items-showcase.png"],
   },
   "Candle Holders": {
     description:
       "Candle holders, table accents, decorative sets, and gift-ready home decor.",
-    mainImage: "/home-decor-gallery.png",
-    relatedImages: ["/home-items-showcase.png", "/kitchen-dining-gallery.png"],
+    mainImage: "/candle-holders-gallery.png",
+    relatedImages: ["/home-decor-gallery.png", "/kitchen-dining-gallery.png"],
   },
   "Storage Baskets": {
     description:
       "Storage baskets, woven organizers, home utility pieces, and display-ready samples.",
-    mainImage: "/kitchen-dining-gallery.png",
-    relatedImages: ["/home-decor-gallery.png", "/home-items-packing.png"],
+    mainImage: "/storage-baskets-gallery.png",
+    relatedImages: ["/kitchen-dining-gallery.png", "/home-items-packing.png"],
   },
   "Serving Trays": {
     description:
       "Serving trays, bowls, table accessories, and dining product collections.",
-    mainImage: "/kitchen-dining-gallery.png",
-    relatedImages: ["/home-items-showcase.png", "/home-decor-gallery.png"],
+    mainImage: "/serving-trays-gallery.png",
+    relatedImages: ["/kitchen-dining-gallery.png", "/home-decor-gallery.png"],
   },
   Planters: {
     description:
       "Planters, ceramic pots, table accents, and indoor decor product options.",
-    mainImage: "/home-decor-gallery.png",
-    relatedImages: ["/home-items-showcase.png", "/kitchen-dining-gallery.png"],
+    mainImage: "/planters-gallery.png",
+    relatedImages: ["/home-decor-gallery.png", "/home-items-showcase.png"],
   },
   "Custom Designs": {
     description:
@@ -221,7 +221,7 @@ export default function Home() {
   }, [product, quantity, requirement]);
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-[#0a2445]">
+    <main className="min-h-screen bg-[#f7fbff] text-[#0a2445]" id="top">
       <section className="overflow-hidden border-b border-[#dce8f2] bg-[linear-gradient(135deg,#ffffff_0%,#eef8ff_58%,#fffaf1_100%)] px-5 py-5 sm:px-8 lg:px-14">
         <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white bg-white/85 px-4 py-3 shadow-[0_14px_50px_rgba(20,57,95,0.08)] backdrop-blur">
           <a className="flex min-w-0 items-center gap-3" href="#">
@@ -719,6 +719,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <a
+        aria-label="Back to top"
+        className="fixed bottom-6 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/80 bg-[#0b2f67] text-white shadow-[0_14px_40px_rgba(8,38,83,0.22)] transition hover:-translate-y-1 hover:bg-[#082653] focus:outline-none focus:ring-4 focus:ring-[#8cc9ee]/45"
+        href="#top"
+      >
+        <span className="sr-only">Back to top</span>
+        <svg
+          aria-hidden="true"
+          className="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2.2"
+          viewBox="0 0 24 24"
+        >
+          <path d="m6 15 6-6 6 6" />
+        </svg>
+      </a>
     </main>
   );
 }
