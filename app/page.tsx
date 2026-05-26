@@ -32,6 +32,20 @@ const productGroups = [
     note: "Share your reference photo or specification and we will confirm availability.",
     image: "/home-items-packing.png",
   },
+  {
+    title: "Manufacturing",
+    items:
+      "Sample preparation, product finishing, quality checks, labels, and buyer-specific packing support.",
+    note: "Useful for buyers who need custom home item production details.",
+    image: "/manufacturing-gallery.png",
+  },
+  {
+    title: "Other Domestic Textile",
+    items:
+      "Towels, mats, table linen, soft furnishings, fabric sets, and everyday home textile items.",
+    note: "Share your required product type and we will confirm available options.",
+    image: "/domestic-textile-gallery.png",
+  },
 ];
 
 const featuredProducts = [
@@ -119,6 +133,18 @@ const productVisuals: Record<
       "Buyer-specific designs, sample grouping, labels, packing styles, and product checks.",
     mainImage: "/home-items-packing.png",
     relatedImages: ["/home-decor-gallery.png", "/home-textiles-gallery.png"],
+  },
+  Manufacturing: {
+    description:
+      "Sample preparation, finishing details, quality checks, labels, and packing presentation.",
+    mainImage: "/manufacturing-gallery.png",
+    relatedImages: ["/home-items-packing.png", "/domestic-textile-gallery.png"],
+  },
+  "Other Domestic Textile": {
+    description:
+      "Towels, mats, table linen, soft furnishings, and other daily-use home textile items.",
+    mainImage: "/domestic-textile-gallery.png",
+    relatedImages: ["/home-textiles-gallery.png", "/bedsheets-gallery.png"],
   },
   Bedsheets: {
     description:
